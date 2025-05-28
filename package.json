@@ -1,0 +1,12 @@
+{
+  "name": "cors-anywhere-vercel",
+  "version": "1.0.0",
+  "description": "A simple CORS Anywhere server for Vercel",
+  "main": "api/cors-anywhere.js",
+  "dependencies": {
+    "cors-anywhere": "^0.4.4"
+  },
+  "scripts": {
+    "start": "node api/cors-anywhere.js"
+  }
+}
