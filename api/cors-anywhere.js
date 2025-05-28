@@ -5,7 +5,7 @@ var port = process.env.PORT || 8080;
 
 var cors_proxy = require('cors-anywhere');
 module.exports = (req, res) => {
-  // req.url = req.url.substr(1); // Vercel adds a leading slash, remove it
+  req.url = req.url.substr(1); // Vercel adds a leading slash, remove it
   cors_proxy.createServer({
     originWhitelist: [], // Allow all origins
     requireHeader: ['origin', 'x-requested-with'],
